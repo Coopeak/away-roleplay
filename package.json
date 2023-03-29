@@ -1,0 +1,29 @@
+{
+  "name": "away-roleplay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coopeak/away-roleplayhttps:.git"
+  },
+  "keywords": [
+    "away",
+    "roleplay"
+  ],
+  "author": "CooPeak Development Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Coopeak/away-roleplayhttps:/issues"
+  },
+  "homepage": "https://github.com/Coopeak/away-roleplayhttps:#readme",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "core-js": "^3.29.1",
+    "parcel": "^2.8.3"
+  }
+}
