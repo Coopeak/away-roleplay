@@ -1,0 +1,32 @@
+body { 
+    background-color: #6A3F2E;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10dvh;
+    left: 10dvw;
+    color: map-get($colors, white);
+    li {
+        text-align: center;
+    }
+}
+
+.navbar {
+    &-main {
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+        height: min-content;
+        background-color: map-get($colors, black);
+        align-items: center;
+        opacity: 0.2;
+        border-radius: 4rem;
+        li {
+            height: max-content;
+            width: max-content;
+        }
+    }
+}

@@ -40,4 +40,53 @@ ul, ol {
   list-style: none;
 }
 
+svg#home path, svg#community path, svg#download path {
+  fill: #fff;
+}
+
+svg#customer-service path {
+  stroke: #fff;
+}
+
+svg#customer-service path#noborder {
+  stroke: none;
+}
+
+svg#download path {
+  stroke: #fff;
+}
+
+body {
+  background-color: #6a3f2e;
+}
+
+nav ul {
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  top: 10dvh;
+  left: 10dvw;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+.navbar-main {
+  width: min-content;
+  height: min-content;
+  opacity: .2;
+  background-color: #000;
+  border-radius: 4rem;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.navbar-main li {
+  height: max-content;
+  width: max-content;
+}
+
 /*# sourceMappingURL=index.b10d73a7.css.map */

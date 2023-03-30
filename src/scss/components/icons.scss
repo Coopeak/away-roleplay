@@ -1,0 +1,21 @@
+svg {
+    &#home, &#community, &#download {
+        path {
+            fill: map-get($colors, white);
+        }
+    }
+    &#customer-service {
+        path {
+            stroke: map-get($colors, white);
+            &#noborder{
+                stroke: none;
+            }
+        }
+    }
+    &#download {
+        path {
+            stroke: map-get($colors, white);
+        }
+    }
+}
+
