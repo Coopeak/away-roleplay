@@ -1,0 +1,7 @@
+.footer {
+  height: 50vh;
+  background-color: map-get($colors, "background-dark");
+  border-top: 0.2rem solid map-get($colors, "soft");
+  color: map-get($colors, "primary");
+  text-align: center;
+}

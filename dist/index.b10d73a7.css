@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
@@ -40,53 +40,109 @@ ul, ol {
   list-style: none;
 }
 
-svg#home path, svg#community path, svg#download path {
-  fill: #fff;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-svg#customer-service path {
-  stroke: #fff;
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#6a3f2e, #36231d);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #867b77;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 svg#customer-service path#noborder {
   stroke: none;
 }
 
-svg#download path {
-  stroke: #fff;
+.footer {
+  height: 50vh;
+  text-align: center;
+  background-color: #36231d;
+  border-top: .2rem solid #db9f8c;
 }
 
 body {
-  background-color: #6a3f2e;
+  color: #fff;
+  background-image: linear-gradient(#6a3f2e, #36231d);
 }
 
-nav ul {
-  color: #fff;
+.intro {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.intro nav ul {
+  color: #fafafa;
   flex-direction: column;
+  gap: 8rem;
   display: flex;
   position: absolute;
-  top: 10dvh;
-  left: 10dvw;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
 }
 
-nav ul li {
+.intro nav ul li {
   text-align: center;
 }
 
-.navbar-main {
+.intro__navbar-main {
   width: min-content;
   height: min-content;
-  opacity: .2;
-  background-color: #000;
+  background-color: #11111195;
   border-radius: 4rem;
   flex-direction: column;
   align-items: center;
+  gap: 3rem;
+  padding: 2rem 1rem;
   display: flex;
 }
 
-.navbar-main li {
+.intro__navbar-main li {
   height: max-content;
   width: max-content;
+}
+
+.intro__image__character {
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.intro__image__background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.intro__header {
+  font-size: 6rem;
+}
+
+.intro__discord {
+  background-color: #11111195;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem;
+  display: flex;
+}
+
+.intro__text {
+  text-transform: uppercase;
+  text-align: right;
+  margin: auto;
+  font-size: 10rem;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */
