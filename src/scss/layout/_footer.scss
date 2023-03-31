@@ -45,10 +45,13 @@
       color: map-get($colors, "gray-light");
       font-weight: 500;
 
-      span {
-        color: map-get($colors, "gray");
+      &__link {
+        color: map-get($colors, "coopeak-color-1");
         font-weight: 900;
-        text-decoration: underline;
+        transition: 0.2s ease;
+      }
+      &__link:hover {
+        color: map-get($colors, "coopeak-color-2");
       }
     }
   }

@@ -105,10 +105,14 @@ svg#customer-service path#noborder {
   font-weight: 500;
 }
 
-.footer__lower__text span {
-  color: #867b77;
+.footer__lower__text__link {
+  color: #f4a260;
   font-weight: 900;
-  text-decoration: underline;
+  transition: all .2s;
+}
+
+.footer__lower__text__link:hover {
+  color: #ffc52d;
 }
 
 body {
@@ -120,6 +124,10 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
+}
+
+.intro nav {
+  z-index: 10;
 }
 
 .intro nav ul {
@@ -135,23 +143,49 @@ body {
 
 .intro nav ul li {
   text-align: center;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.intro nav ul .intro__discord {
+  aspect-ratio: 1;
+}
+
+.intro nav ul .intro__discord-container {
+  display: flex;
+}
+
+.intro__navbar__text {
+  color: #0000;
+  flex-grow: 1;
+  transition: all .2s;
 }
 
 .intro__navbar-main {
-  width: min-content;
+  width: 7rem;
   height: min-content;
   background-color: #11111195;
   border-radius: 4rem;
   flex-direction: column;
-  align-items: center;
   gap: 3rem;
   padding: 2rem 1rem;
+  transition: all .4s;
   display: flex;
+  overflow: hidden;
 }
 
 .intro__navbar-main li {
   height: max-content;
   width: max-content;
+}
+
+.intro__navbar-main:hover {
+  width: 18rem;
+}
+
+.intro__navbar-main:hover .intro__navbar__text {
+  color: #a6a6a675;
 }
 
 .intro__image__character {
@@ -185,7 +219,7 @@ body {
   text-transform: uppercase;
   text-align: right;
   margin: auto;
-  font-size: 10rem;
+  font-size: 15rem;
   font-weight: bold;
 }
 

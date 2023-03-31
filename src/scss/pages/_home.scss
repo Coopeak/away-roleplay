@@ -12,35 +12,61 @@ body {
   height: 100vh;
   width: 100%;
 
-  nav ul {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    color: map-get($colors, "white");
-    gap: 8rem;
+  nav {
+    z-index: 10;
+    ul {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      color: map-get($colors, "white");
+      gap: 8rem;
 
-    li {
-      text-align: center;
+      li {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .intro__discord {
+        aspect-ratio: 1;
+        &-container {
+          display: flex;
+        }
+      }
     }
   }
 
-  &__navbar-main {
-    display: flex;
-    flex-direction: column;
-    width: min-content;
-    height: min-content;
-    background-color: map-get($colors, "black-light");
-    align-items: center;
-    border-radius: 4rem;
-    gap: 3rem;
-    padding: 2rem 1rem;
+  &__navbar {
+    &__text {
+      flex-grow: 1;
+      color: transparent;
+      transition: 0.2s ease;
+    }
+    &-main {
+      display: flex;
+      flex-direction: column;
+      width: 7rem; /* DEĞİŞ min-content */
+      height: min-content;
+      background-color: map-get($colors, "black-light");
+      border-radius: 4rem;
+      gap: 3rem;
+      padding: 2rem 1rem;
+      transition: 0.4s ease;
+      overflow: hidden;
 
-    li {
-      height: max-content;
-      width: max-content;
+      li {
+        height: max-content;
+        width: max-content;
+      }
+    }
+    &-main:hover {
+      width: 18rem;
+      .intro__navbar__text {
+        color: map-get($colors, "gray-light");
+      }
     }
   }
 
@@ -75,7 +101,7 @@ body {
 
   &__text {
     margin: auto;
-    font-size: 10rem;
+    font-size: 15rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: right;
