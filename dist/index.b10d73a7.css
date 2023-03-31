@@ -41,7 +41,7 @@ ul, ol {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -61,10 +61,54 @@ svg#customer-service path#noborder {
 }
 
 .footer {
-  height: 50vh;
+  height: 40vh;
   text-align: center;
   background-color: #36231d;
   border-top: .2rem solid #db9f8c;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+}
+
+.footer__upper__header {
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: .1rem #867b77;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.footer__upper__nav {
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.footer__upper__nav__item {
+  text-transform: uppercase;
+  color: #867b77;
+  font-weight: bold;
+}
+
+.footer__lower {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
+.footer__lower__text {
+  color: #a6a6a675;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer__lower__text span {
+  color: #867b77;
+  font-weight: 900;
+  text-decoration: underline;
 }
 
 body {
