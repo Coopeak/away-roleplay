@@ -1,0 +1,53 @@
+/* MEDIA QUERY MANAGER
+1600px: md-desktop = 100em
+1440px: desktop = 81.25em
+1050px: tablet = 65.625em
+750px: portrait tablet = 46.875em
+650px: mobile = 40.625em
+300px: sm-mobile = 18.75em
+*/
+
+@mixin respond($device) {
+  @if ($device == desktop) {
+    @media only screen and (max-width: map-get($breakpoints, "desktop")) {
+      @content;
+    }
+  } @else if ($device == mobile) {
+    @media only screen and (max-width: map-get($breakpoints, "mobile")) {
+      @content;
+    }
+  } @else if ($device == sm-mobile) {
+    @media only screen and (max-width: map-get($breakpoints, "sm-mobile")) {
+      @content;
+    }
+  } @else if($device == xs-mobile) {
+    @media only screen and (max-width: map-get($breakpoints, "xs-mobile")) {
+      @content;
+    }
+  } @else if($device == md-desktop) {
+    @media only screen and (max-width: map-get($breakpoints, "md-desktop")) {
+      @content;
+    }
+  } @else if($device == bg-desktop) {
+    @media only screen and (max-width: map-get($breakpoints, "bg-desktop")) {
+      @content;
+    }
+  } @else if($device == tablet) {
+    @media only screen and (max-width: map-get($breakpoints, "tablet")) {
+      @content;
+    }
+  } @else if($device == tablet-portrait) {
+    @media only screen and (max-width: map-get($breakpoints, "tablet-portrait")) {
+      @content;
+    }
+  } @else if($device == landscape) {
+    @media only screen and (min-width: map-get(map-get($breakpoints, "landscape"), "min-width")) and (max-height: map-get(map-get($breakpoints, "landscape"), "max-height")) {
+      @content;
+    }
+  } @else if($device == landscape-and-mobile) {
+    @media only screen and (min-width: map-get(map-get($breakpoints, "landscape"), "min-width")) and (max-height: map-get(map-get($breakpoints, "landscape"), "max-height")),
+      only screen and (max-width: map-get($breakpoints, "mobile")) {
+      @content;
+    }
+  }
+}

@@ -45,13 +45,33 @@
       color: map-get($colors, "gray-light");
       font-weight: 500;
 
-      &__link {
+      span {
         color: map-get($colors, "coopeak-color-1");
-        font-weight: 900;
-        transition: 0.2s ease;
+        text-decoration: underline;
+
+        &:hover {
+          color: map-get($colors, "coopeak-color-2");
+        }
       }
-      &__link:hover {
-        color: map-get($colors, "coopeak-color-2");
+    }
+  }
+
+  @include respond(mobile) {
+    &__upper {
+      &__header {
+        font-size: 3rem;
+      }
+
+      &__nav {
+        font-size: 1.6rem;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    &__lower {
+      &__text {
+        font-size: 1.2rem;
       }
     }
   }

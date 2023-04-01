@@ -105,14 +105,29 @@ svg#customer-service path#noborder {
   font-weight: 500;
 }
 
-.footer__lower__text__link {
+.footer__lower__text span {
   color: #f4a260;
-  font-weight: 900;
-  transition: all .2s;
+  text-decoration: underline;
 }
 
-.footer__lower__text__link:hover {
+.footer__lower__text span:hover {
   color: #ffc52d;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .footer__upper__header {
+    font-size: 3rem;
+  }
+
+  .footer__upper__nav {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .footer__lower__text {
+    font-size: 1.2rem;
+  }
 }
 
 body {
@@ -120,10 +135,17 @@ body {
   background-image: linear-gradient(#6a3f2e, #36231d);
 }
 
+@media only screen and (max-width: 40.625em) {
+  body {
+    font-size: 90%;
+  }
+}
+
 .intro {
-  height: 98vh;
-  width: 95vw;
+  height: 100vh;
   display: flex;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .intro nav {
@@ -143,6 +165,7 @@ body {
 
 .intro nav ul li {
   text-align: center;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   display: flex;
@@ -152,7 +175,17 @@ body {
   aspect-ratio: 1;
 }
 
-.intro nav ul .intro__discord-container, .intro__navbar-link {
+.intro nav ul .intro__discord-container {
+  display: flex;
+}
+
+@media only screen and (max-width: 40.625em) {
+  .intro nav {
+    display: none;
+  }
+}
+
+.intro__navbar-link {
   display: flex;
 }
 
@@ -167,7 +200,7 @@ body {
 }
 
 .intro__navbar-main {
-  width: 7rem;
+  width: 6.8rem;
   height: min-content;
   background-color: #11111195;
   border-radius: 4rem;
@@ -193,15 +226,39 @@ body {
 }
 
 .intro__image__character {
-  height: 90%;
+  height: 90vh;
   position: absolute;
   bottom: 1.3rem;
   right: 0;
 }
 
+@media only screen and (max-width: 74.625em) {
+  .intro__image__character {
+    height: 70vh;
+    bottom: 0;
+    right: -6rem;
+  }
+}
+
+@media only screen and (max-width: 54.875em) {
+  .intro__image__character {
+    height: 55vh;
+    bottom: 0;
+    right: -16rem;
+  }
+}
+
+@media only screen and (max-width: 40.625em) {
+  .intro__image__character {
+    height: 48vh;
+    bottom: 0;
+    right: -9rem;
+  }
+}
+
 .intro__image__background {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   object-fit: cover;
   position: absolute;
 }
@@ -227,216 +284,28 @@ body {
   font-weight: bold;
 }
 
-.download-item {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 1400px) {
+@media only screen and (max-width: 74.625em) {
   .intro__text {
-    font-size: 9rem;
-  }
-
-  .intro__image__character {
-    height: 75%;
+    font-size: 10rem;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .intro {
-    width: 95vw;
-    height: 90vh;
-  }
-
-  .intro nav ul {
-    top: 45%;
-  }
-
+@media only screen and (max-width: 40.625em) {
   .intro__text {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2rem;
     font-size: 6rem;
   }
 
-  .intro__image__character {
-    height: 55%;
-    bottom: 8.5rem;
+  .intro {
+    height: 100vh;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .intro {
-    width: 95vw;
-    height: 65vh;
-  }
-
-  .intro nav ul {
-    top: 45%;
-  }
-
-  .intro__text {
-    font-size: 4.5rem;
-  }
-
-  .intro__image__character {
-    height: 55%;
-    bottom: 29.9rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .intro {
-    width: 95vw;
-    height: 55vh;
-  }
-
-  .intro nav ul {
-    gap: 3rem;
-    top: 28%;
-  }
-
-  .intro__text {
-    font-size: 4.5rem;
-  }
-
-  .intro__image__character {
-    height: 35%;
-    bottom: 38rem;
-  }
-
-  .intro__navbar-link svg {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .intro__navbar-main {
-    width: 5rem;
-  }
-
-  .download-item {
-    margin-left: 0;
-  }
-
-  .intro__discord {
-    padding: 1rem 1.2rem;
-  }
-
-  .intro__discord svg {
-    width: 2.5rem;
-  }
-
-  .footer {
-    height: 45vh;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .intro {
-    width: 95vw;
-    height: 60vh;
-  }
-
-  .intro nav ul {
-    gap: 3rem;
-    top: 30%;
-    left: 2rem;
-  }
-
-  .intro__text {
-    font-size: 4.5rem;
-  }
-
-  .intro__header img {
-    width: 3.5rem;
-    aspect-ratio: 1;
-    height: auto;
-    margin-left: .7rem;
-  }
-
-  .intro__image__character {
-    height: 32%;
-    bottom: 27rem;
-  }
-
-  .intro__navbar-link svg {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .intro__navbar-main {
-    width: 5rem;
-  }
-
-  .download-item {
-    margin-left: 0;
-  }
-
-  .intro__discord {
-    padding: 1rem 1.2rem;
-  }
-
-  .intro__discord svg {
-    width: 2.5rem;
-  }
-
-  .footer {
-    height: 45vh;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .intro {
-    width: 95vw;
-    height: 60vh;
-  }
-
-  .intro nav ul {
-    gap: 3rem;
-    top: 30%;
-    left: 2rem;
-  }
-
-  .intro__text {
-    font-size: 4rem;
-  }
-
-  .intro__header img {
-    width: 3.5rem;
-    aspect-ratio: 1;
-    height: auto;
-    margin-left: .7rem;
-  }
-
-  .intro__image__character {
-    height: 32%;
-    bottom: 29.8rem;
-  }
-
-  .intro__navbar-link svg {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .intro__navbar-main {
-    width: 5rem;
-  }
-
-  .download-item {
-    margin-left: 0;
-  }
-
-  .intro__discord {
-    padding: 1rem 1.2rem;
-  }
-
-  .intro__discord svg {
-    width: 2.5rem;
-  }
-
-  .footer {
-    height: 45vh;
-  }
-
-  .footer__upper {
-    font-size: 1.4rem;
-  }
+.download-item {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

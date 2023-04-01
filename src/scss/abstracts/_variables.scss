@@ -9,6 +9,30 @@ $colors: (
   "gray-light-2": #c6c6c6,
   "gray": #867b77,
   "soft": #db9f8c,
-  "coopeak-color-1":#F4A260,
-  "coopeak-color-2":#FFC52D,
+  "coopeak-color-1": #f4a260,
+  "coopeak-color-2": #ffc52d,
+);
+
+$breakpoints: (
+  "bg-desktop": 110em,
+  // 1760 px,
+  "md-desktop": 100em,
+  // 1600 px,
+  "desktop": 90em,
+  // 1440 px,
+  "tablet": 74.625em,
+  // 1050 px,
+  "tablet-portrait": 54.875em,
+  // 750 px
+  "mobile": 40.625em,
+  // 650 px
+  "sm-mobile": 18.75em,
+  // 300 px
+  "xs-mobile": 12.5em,
+  // 200 px
+  "landscape":
+    (
+      min-width: 40.625em,
+      max-height: 31.25em,
+    ),
 );
