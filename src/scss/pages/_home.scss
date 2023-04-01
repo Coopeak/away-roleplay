@@ -75,16 +75,15 @@ body {
       padding: 2rem 1rem;
       transition: 0.4s ease;
       overflow: hidden;
+      align-items: center;
 
       li {
         height: max-content;
         width: max-content;
-      }
+        transition: all 0.25s ease;
 
-      &:hover {
-        width: 18rem;
-        .intro__navbar__text {
-          color: map-get($colors, "gray-light-2");
+        &:hover {
+          opacity: 0.8;
         }
       }
     }
@@ -94,7 +93,7 @@ body {
     &__character {
       position: absolute;
       right: 0;
-      bottom: 1.3rem;
+      bottom: 0;
       height: 90vh;
 
       @include respond(tablet) {
@@ -160,8 +159,4 @@ body {
   @include respond(mobile) {
     height: 100vh;
   }
-}
-
-.download-item {
-  margin-left: 1rem;
 }

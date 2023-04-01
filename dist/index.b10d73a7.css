@@ -73,7 +73,7 @@ svg#customer-service path#noborder {
 .footer__upper__header {
   text-transform: uppercase;
   color: #0000;
-  -webkit-text-stroke: .1rem #867b77;
+  -webkit-text-stroke: .15rem #867b77;
   -webkit-text-fill-color: transparent;
   margin-bottom: 1rem;
   font-size: 4rem;
@@ -105,12 +105,12 @@ svg#customer-service path#noborder {
   font-weight: 500;
 }
 
-.footer__lower__text span {
+.footer__lower__text a {
   color: #f4a260;
   text-decoration: underline;
 }
 
-.footer__lower__text span:hover {
+.footer__lower__text a:hover {
   color: #ffc52d;
 }
 
@@ -205,6 +205,7 @@ body {
   background-color: #11111195;
   border-radius: 4rem;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
   padding: 2rem 1rem;
   transition: all .4s;
@@ -215,20 +216,17 @@ body {
 .intro__navbar-main li {
   height: max-content;
   width: max-content;
+  transition: all .25s;
 }
 
-.intro__navbar-main:hover {
-  width: 18rem;
-}
-
-.intro__navbar-main:hover .intro__navbar__text {
-  color: #c6c6c6;
+.intro__navbar-main li:hover {
+  opacity: .8;
 }
 
 .intro__image__character {
   height: 90vh;
   position: absolute;
-  bottom: 1.3rem;
+  bottom: 0;
   right: 0;
 }
 
@@ -302,10 +300,6 @@ body {
   .intro {
     height: 100vh;
   }
-}
-
-.download-item {
-  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

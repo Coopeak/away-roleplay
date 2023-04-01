@@ -17,7 +17,7 @@
       text-transform: uppercase;
 
       color: transparent;
-      -webkit-text-stroke: 0.1rem map-get($colors, "gray");
+      -webkit-text-stroke: 0.15rem map-get($colors, "gray");
       -webkit-text-fill-color: transparent;
     }
 
@@ -45,7 +45,7 @@
       color: map-get($colors, "gray-light");
       font-weight: 500;
 
-      span {
+      a {
         color: map-get($colors, "coopeak-color-1");
         text-decoration: underline;
 
