@@ -12,7 +12,7 @@
 97C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\core-js\full\async-iterator\some.js133248472257472536 0
 107C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\@swc\helpers\src\_interop_require_default.mjs133248472119369845 0
 102C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\lightningcss-win32-x64-msvc\package.json133248471947906237 0
-53C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist133248490712385499 1
+53C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist133248491750159348 1
 71C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\path-type133248471977598235 1
 94C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\css-what\lib\commonjs\index.d.ts133248472035338203 0
 59C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\.gitignore133248469611201692 0
@@ -32,7 +32,7 @@
 91C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\core-js\actual\string\virtual133248472268212296 1
 90C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\svgo\plugins\inlineStyles.js133248472041322674 0
 98C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\@parcel\codeframe\test\fixtures\a.js133248471962073642 0
-59C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\index.html133248489308903587 0
+59C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\index.html133248491672458755 0
 93C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\caniuse-lite\data\regions\CA.js133248472107722223 0
 84C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\entities\lib\encode.js133248471999804579 0
 74C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\core-js\full133248472270514384 1
@@ -7919,4 +7919,4 @@
 75C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\node_modules\.bin\svgo.ps1133248472273757332 0
 79C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist\away-roleplay.3464ddca.js133248490158085030 0
 76C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist\index.b10d73a7.css.map133248490712375522 0
-64C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist\index.html133248490158515417 0
+64C:\Users\furfatsev\Desktop\CooPeak\away-roleplay\dist\index.html133248491750149334 0
